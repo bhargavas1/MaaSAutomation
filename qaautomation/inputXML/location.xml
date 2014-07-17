@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase name="location">
+
+	<!--loginAs - To Login into the application -->
+	<case name="loginAs" runmode="Y">
+		<param id="username">bhargavas@cybage.com</param>
+		<param id="password">password</param>
+		<param id="organization">phunware</param>
+	</case>
+
+	<case name="clickAndVerifyLocationTab" runmode="Y">
+	</case>
+
+	<case name="verifyLocationTabLayout" runmode="Y">
+	</case>
+
+	<case name="verifyConfigureTabLayout" runmode="Y">
+	</case>
+
+	<case name="verifyNewVenueTabLayout" runmode="Y">
+	</case>
+
+	<case name="validatingAddingNewVenue" runmode="N">
+	</case>
+
+	<case name="createNewVenue" runmode="N">
+		<param id="venueName">CYB_TOWERS_2</param>
+		<param id="onEntry">Welcome To CYBAGE TOWERS BUILDING NO 2</param>
+		<param id="hours">15</param>
+		<param id="minutes">45</param>
+	</case>
+
+
+	<case name="verifyMappingLayout" runmode="Y">
+	</case>
+
+	<case name="verifyMappingLayoutPullTab" runmode="N">
+	</case>
+
+	<case name="creatingDDCircle_One" runmode="Y">
+	</case>
+
+	<case name="AddingZoneTrigger_One" runmode="Y">
+		<param id="Name">conference room1</param>
+		<param id="Message">Welcome to conference room1</param>
+		<param id="zoneHours">15</param>
+		<param id="zoneMin">45</param>
+	</case>
+
+	<case name="creatingPointOfInterest_One" runmode="Y">
+	</case>
+
+	<case name="savingPOI_One" runmode="Y">
+		<param id="Name">conference room1</param>
+		<param id="Type">Banquet Hall</param>
+		<param id="CustomIconImage"></param>
+		<param id="portalId">BH1</param>
+		<param id="zoomLevel">-1</param>
+		<param id="maxZoomLevel">-1</param>
+		<param id="description">This is Banquet Hall1</param>
+	</case>
+
+	<case name="creatingDDCircle_Two" runmode="Y">
+	</case>
+
+	<case name="AddingZoneTrigger_Two" runmode="Y">
+		<param id="NameTwo">CEO Chamber</param>
+		<param id="Message">Welcome to CEO Chamber</param>
+		<param id="zoneHours">15</param>
+		<param id="zoneMin">02</param>
+	</case>
+
+	<case name="creatingPointOfInterest_Two" runmode="Y">
+	</case>
+
+	<case name="savingPOI_Two" runmode="Y">
+		<param id="Name">CEO Chamber</param>
+		<param id="Type">Business Facility</param>
+		<param id="CustomIconImage"></param>
+		<param id="portalId">Bussiness Facility</param>
+		<param id="zoomLevel">-1</param>
+		<param id="maxZoomLevel">-1</param>
+		<param id="description">This is Bussiness Facility Hall</param>
+	</case>
+
+	<case name="validationsInNewVenue" runmode="N">
+		<param id="venueName">CYB_TOWERS_2</param>
+		<param id="onEntry">Welcome To CYBAGE TOWERS BUILDING NO 2</param>
+		<param id="hours">15</param>
+		<param id="minutes">02</param>
+	</case>
+
+	<case name="CreatingWayPoint" runmode="Y">
+	</case>
+
+
+
+	<case name="MapZoomInZoomOut" runmode="N">
+	</case>
+
+
+	<case name="removingElementsOnMap" runmode="Y">
+	</case>
+
+	<case name="editingElements" runmode="Y">
+	</case>
+
+	<!--logOut - To Logout from the application -->
+	<case name="logOut" runmode="Y">
+	</case>
+
+</testcase>
