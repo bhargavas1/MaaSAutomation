@@ -8420,9 +8420,20 @@ public class ContentManagement extends Suite {
 					"Unable to identify third label texbox element", true);
 			m_assert.fail("Unable to identify third label textbox element");
 		}
-		SeleniumUtils.clearText(element);
-		SeleniumUtils.sleepThread(2);
 		SeleniumUtils.type(element, testcaseArgs.get("field3Data"));
+		// Locations MultiLine text box
+		/*
+		 * element = SeleniumUtils .findobject( Suite.objectRepositoryMap
+		 * .get("CMContentTabMultiLineHtmlRichTextboxBottomBodyParagraph")
+		 * .getLocatortype(), Suite.objectRepositoryMap
+		 * .get("CMContentTabMultiLineHtmlRichTextboxBottomBodyParagraph")
+		 * .getLocatorvalue()); if (element == null) {
+		 * logger.error("Unable to identify third label texbox element");
+		 * ReportUtils.setStepDescription(
+		 * "Unable to identify third label texbox element", true);
+		 * m_assert.fail("Unable to identify third label textbox element"); }
+		 * SeleniumUtils.type(element, testcaseArgs.get("field3Data"));
+		 */
 		// Move back to Default content
 		SeleniumUtils.switchToDefaultWindow();
 		// Identify Bold button
@@ -8444,7 +8455,7 @@ public class ContentManagement extends Suite {
 				.getAttributeValue(element, "class");
 		isTextMatching = SeleniumUtils.assertEqual(
 				Bold_Initial_Class_Actual_Value,
-				testcaseArgs.get("ExpectedAfterBoldClassValue"));
+				testcaseArgs.get("ExpectedInitialBoldClassValue"));
 		if (!isTextMatching) {
 			logger.error("Validation failed at Bold functionality");
 			ReportUtils.setStepDescription(
@@ -8555,48 +8566,47 @@ public class ContentManagement extends Suite {
 		SeleniumUtils.clearText(element);
 		SeleniumUtils.sleepThread(2);
 		SeleniumUtils.type(element, testcaseArgs.get("field4Data"));
-		// enter data in fifth label
-		element = SeleniumUtils.findobject(
-				Suite.objectRepositoryMap.get(
-						"CMContentTabContainersContentFormCompanyEstDate")
-						.getLocatortype(),
-				Suite.objectRepositoryMap.get(
-						"CMContentTabContainersContentFormCompanyEstDate")
-						.getLocatorvalue());
-		// Get the text
-		String fifthLabelText = SeleniumUtils.getText(element);
-		isTextMatching = SeleniumUtils.assertEqual(fifthLabelText,
-				testcaseArgs.get("field5"));
-		if (!isTextMatching) {
-			logger.error("fifth Label text matching failed."
-					+ " The expected text is [" + testcaseArgs.get("field5")
-					+ "] and the return text is [" + fifthLabelText + "]");
-			ReportUtils.setStepDescription("fifth Label text matching"
-					+ " failed", "", testcaseArgs.get("field5"),
-					fifthLabelText, true);
-			m_assert.fail("fifth Label text matching failed."
-					+ " The expected text is [" + testcaseArgs.get("field5")
-					+ "] and the return text is [" + fifthLabelText + "]");
-		}
-		// Identify Date text box
-		element = SeleniumUtils
-				.findobject(
-						Suite.objectRepositoryMap
-								.get("CMContentTabContainersContentFormCompanyEstDateTextBox")
-								.getLocatortype(),
-						Suite.objectRepositoryMap
-								.get("CMContentTabContainersContentFormCompanyEstDateTextBox")
-								.getLocatorvalue());
-		if (element == null) {
-			logger.error("Unable to identify fifth label texbox element");
-			ReportUtils.setStepDescription(
-					"Unable to identify fifth label texbox element", true);
-			m_assert.fail("Unable to identify fifth label textbox element");
-		}
-		SeleniumUtils.clearText(element);
-		SeleniumUtils.sleepThread(4);
-		SeleniumUtils.type(element, testcaseArgs.get("field5Data"));
-		logger.info("Verification of all the form fields and Entering data is successful");
+		/*
+		 * // enter data in fifth label element = SeleniumUtils.findobject(
+		 * Suite.objectRepositoryMap.get(
+		 * "CMContentTabContainersContentFormCompanyEstDate") .getLocatortype(),
+		 * Suite.objectRepositoryMap.get(
+		 * "CMContentTabContainersContentFormCompanyEstDate")
+		 * .getLocatorvalue()); // Get the text String fifthLabelText =
+		 * SeleniumUtils.getText(element); isTextMatching =
+		 * SeleniumUtils.assertEqual(fifthLabelText,
+		 * testcaseArgs.get("field5")); if (!isTextMatching) {
+		 * logger.error("fifth Label text matching failed." +
+		 * " The expected text is [" + testcaseArgs.get("field5") +
+		 * "] and the return text is [" + fifthLabelText + "]");
+		 * ReportUtils.setStepDescription("fifth Label text matching" +
+		 * " failed", "", testcaseArgs.get("field5"), fifthLabelText, true);
+		 * m_assert.fail("fifth Label text matching failed." +
+		 * " The expected text is [" + testcaseArgs.get("field5") +
+		 * "] and the return text is [" + fifthLabelText + "]"); } // Identify
+		 * Date text box element = SeleniumUtils .findobject(
+		 * Suite.objectRepositoryMap
+		 * .get("CMContentTabContainersContentFormCompanyEstDateTextBox")
+		 * .getLocatortype(), Suite.objectRepositoryMap
+		 * .get("CMContentTabContainersContentFormCompanyEstDateTextBox")
+		 * .getLocatorvalue()); if (element == null) {
+		 * logger.error("Unable to identify fifth label texbox element");
+		 * ReportUtils.setStepDescription(
+		 * "Unable to identify fifth label texbox element", true);
+		 * m_assert.fail("Unable to identify fifth label textbox element"); }
+		 * SeleniumUtils.clickOnElement(element); SeleniumUtils.sleepThread(3);
+		 * // Identify Date Picker and Select current date element =
+		 * SeleniumUtils.waitForElementToIdentify(
+		 * Suite.objectRepositoryMap.get(
+		 * "CMSContentFormCompanyEstDateCalanderCurrentDate") .getLocatortype(),
+		 * Suite.objectRepositoryMap.get(
+		 * "CMSContentFormCompanyEstDateCalanderCurrentDate")
+		 * .getLocatorvalue()); if (element == null) {
+		 * logger.error("Unable to identify CANCEL element");
+		 * ReportUtils.setStepDescription("Unable to identify CANCEL element",
+		 * true); m_assert.fail("Unable to identify CANCEL element"); }
+		 * SeleniumUtils.clickOnElement(element);
+		 */
 		logger.info("Click on SAVE button");
 		// Identify Cancel button
 		element = SeleniumUtils.findobject(

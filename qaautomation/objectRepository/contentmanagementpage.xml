@@ -66,6 +66,14 @@
 		locatortype="xpath"
 		locatorvalue=".//div[@id='dashboard-main-content-container']/div/div[@id='dashboard-view-structure-item']/div/form/div[1]/div/div/div/div[5]/div[2]/input" />
 
+	
+	<element name="CMSContentFormCompanyEstDateCalanderCurrentDate"
+		locatortype="xpath"
+		locatorvalue=".//td[@class='day active']" />
+	
+	
+	
+	
 	<element name="CMContentTabContainersContentFormCancelBtn"
 		locatortype="xpath" locatorvalue=".//div[@id='dashboard-main-content-submit']/div/a" />
 	<element name="CMContentTabContainersContentFormSavelBtn"
@@ -348,7 +356,11 @@
 	
 	<element name="CMContentTabMultiLineHtmlRichTextboxBottomBody"
 		locatortype="xpath"
-		locatorvalue=".//html[@dir='ltr']/body/p" />
+		locatorvalue="//body[@class='cke_editable cke_editable_themed cke_contents_ltr']" />
+	
+	<element name="CMContentTabMultiLineHtmlRichTextboxBottomBodyParagraph"
+		locatortype="xpath"
+		locatorvalue="//body[@class='cke_editable cke_editable_themed cke_contents_ltr']/p" />
 
 	<element name="CMContentTabMultiLineHtmlRichTextboxBold"
 		locatortype="xpath"

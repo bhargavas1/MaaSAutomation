@@ -14,47 +14,47 @@
 	</case>
 
 	<!--verifyStructureLayout - Verify the Structure tab layout -->
-	<case name="verifyStructureLayout" runmode="N">
+	<case name="verifyStructureLayout" runmode="Y">
 	</case>
 
 	<!--verifySchemasLayout - Verify the Schemas tab layout -->
-	<case name="verifySchemasLayout" runmode="N">
+	<case name="verifySchemasLayout" runmode="Y">
 	</case>
 
 	<!--verifyCreateNewSchemaLayout - Verify the Create New Schemas layout -->
-	<case name="verifyCreateNewSchemaLayout" runmode="N">
+	<case name="verifyCreateNewSchemaLayout" runmode="Y">
 	</case>
 
 	<!--validationsOnCreateNewSchema - To Validate all the mandatory fields 
 		while Creating new Schema -->
-	<case name="validationsOnCreateNewSchema" runmode="N">
+	<case name="validationsOnCreateNewSchema" runmode="Y">
 		<param id="schemaName">Cybage Automation Test Schema</param>
 		<param id="description">This schema is about for Cybage</param>
 	</case>
 
 	<!--createNewSchema - To Create New Schema -->
-	<case name="createNewSchema" runmode="N">
+	<case name="createNewSchema" runmode="Y">
 		<param id="schemaName">Cybage Automation Test Schema</param>
 	</case>
 
 	<!--verifySchema - To Verify Schema in Schemas List -->
-	<case name="verifySchema" runmode="N">
+	<case name="verifySchema" runmode="Y">
 		<param id="schemaName">Cybage Automation Test Schema</param>
 	</case>
 
 	<!--editSchema - To Edit Schema -->
-	<case name="editSchema" runmode="N">
+	<case name="editSchema" runmode="Y">
 		<param id="schemaName">Cybage Automation Test Schema</param>
 		<param id="schemaNewName">Cybage Automation Test SchemaEdit</param>
 	</case>
 
 	<!--deleteSchema - To Delete Schema -->
-	<case name="deleteSchema" runmode="N">
+	<case name="deleteSchema" runmode="Y">
 		<param id="schemaName">Cybage Automation Test SchemaEdit</param>
 	</case>
 
 	<!--createNewComplexSchema - To Create New Complex Schema -->
-	<case name="createNewComplexSchema" runmode="N">
+	<case name="createNewComplexSchema" runmode="Y">
 		<param id="schemaName">Company</param>
 		<param id="description">This schema is for Company</param>
 		<param id="attribute">CompanyId</param>
@@ -74,30 +74,30 @@
 	</case>
 
 	<!--createNewContainer - To Create New Container -->
-	<case name="createNewContainer" runmode="N">
+	<case name="createNewContainer" runmode="Y">
 		<param id="containerName">Cybage Automation Test Container</param>
 	</case>
 
 	<!--editContainer - To Edit Container -->
-	<case name="editContainer" runmode="N">
+	<case name="editContainer" runmode="Y">
 		<param id="containerName">Cybage Automation Test Container</param>
 		<param id="containerNewName">Cybage Automation Test ContainerEdit</param>
 	</case>
 
 	<!--deleteContainer - To Delete Container -->
-	<case name="deleteContainer" runmode="N">
+	<case name="deleteContainer" runmode="Y">
 		<param id="containerName">Cybage Automation Test ContainerEdit</param>
 	</case>
 
 	<!--createContainerWithSchema - To Create New Container and add schema -->
-	<case name="createContainerWithSchema" runmode="N">
+	<case name="createContainerWithSchema" runmode="Y">
 		<param id="containerName">Companies List</param>
 		<param id="fieldValue">Companies</param>
 		<param id="schema">Company</param>
 	</case>
 
 	<!--putContentInContainer - To put content in Container -->
-	<case name="putContentInContainer" runmode="N">
+	<case name="putContentInContainer" runmode="Y">
 		<param id="containerName">Companies List</param>
 		<param id="InnerContainerValue">Companies</param>
 		<param id="field1">CompanyName</param>
@@ -139,12 +139,12 @@
 		<param id="field3Data">PUNE,HYD,GNR</param>
 		<param id="field4Data">5000</param>
 		<param id="field5Data">1990-10-15</param>
-		<param id="ExpectedInitialBoldClassValue">cke_button cke_button__bold cke_button_off</param>
+		<param id="ExpectedInitialBoldClassValue">cke_button cke_button__bold  cke_button_off</param>
 		<param id="ExpectedAfterBoldClassValue">cke_button cke_button__bold cke_button_on</param>
 		
 	</case>
 
-	<case name="deleteTestData" runmode="N">
+	<case name="deleteTestData" runmode="Y">
 		<param id="schemaName">Company</param>
 		<param id="containerName">Companies List</param>
 	</case>
@@ -152,7 +152,7 @@
 
 
 	<!--logOut - To Logout from the application -->
-	<case name="logOut" runmode="N">
+	<case name="logOut" runmode="Y">
 	</case>
 
 </testcase>
